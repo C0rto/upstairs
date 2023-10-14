@@ -1,0 +1,68 @@
+/* TOGGLE CSS */
+
+.container {
+  width: 40px;
+  height: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--textColor);
+  position: relative;
+  transition: all 600ms ease;
+  transition-delay: 150ms;
+}
+
+.sun {
+  color: #0f172a;
+  transition: all 500ms ease-out;
+  transition-delay: 100ms;
+}
+
+.moon {
+  color: #f8f8f8;
+  transition: all 500ms ease-out;
+  transition-delay: 100ms;
+}
+
+.container:hover .sun {
+  color: #f13704;
+  scale: 1.3;
+}
+.container:hover .moon {
+  color: #dbd56e;
+  scale: 1.3;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transition: all 750ms ease;
+  z-index: 999;
+  background-color: var(--softBg);
+  border: 1px solid;
+}
+
+.dark {
+  transform: translateX(21px);
+}
+
+.light {
+  transform: translateX(-1px);
+}
+
+@media (max-width: 640px) {
+  .container:hover .sun {
+    scale: none;
+    color: #0f172a;
+  }
+  .container:hover .moon {
+    scale: none;
+    color: #f8f8f8;
+  }
+}

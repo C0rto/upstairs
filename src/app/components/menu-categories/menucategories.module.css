@@ -1,0 +1,37 @@
+.categoryList {
+  margin-top: 35px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.categoryItem {
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.categoryItem.comedy {
+  background-color: #92bfb17d;
+}
+
+.categoryItem.musical {
+  background-color: #f4ac457d;
+}
+
+.categoryItem.thriller {
+  background-color: #694a387d;
+}
+
+.categoryItem.horror {
+  background-color: #a61c3c7d;
+}
+
+.categoryItem.fantasy {
+  background-color: #9046cf7d;
+}
+
+.categoryItem.retro {
+  background-color: #fb4d3d7d;
+}

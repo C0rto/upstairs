@@ -1,0 +1,83 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.select {
+  margin-bottom: 50px;
+  padding: 10px 20px;
+  margin-left: 50px;
+  width: max-content;
+}
+
+.editor {
+  display: flex;
+  gap: 20px;
+  margin: 10px;
+  height: 700px;
+  position: relative;
+}
+
+.button,
+.addButton {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid var(--textColor);
+  color: var(--textColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.addButton {
+  border-color: var(--logoViolet);
+}
+.icon {
+  color: var(--logoViolet);
+}
+.add {
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+  border-radius: var(--buttonRadius);
+  gap: 20px;
+  background-color: var(--bg);
+  position: absolute;
+  z-index: 999;
+  width: max-content;
+  top: 60px;
+}
+
+.input {
+  padding: 50px;
+  font-size: 64px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #b3b3b1;
+}
+
+.input::placeholder {
+  color: #b3b3b1;
+}
+
+.textArea {
+  width: 100%;
+}
+
+.publish {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--logoViolet);
+  border-radius: var(--buttonRadius);
+  color: white;
+  cursor: pointer;
+  border-radius: 20;
+}

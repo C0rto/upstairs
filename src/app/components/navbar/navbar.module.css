@@ -1,0 +1,47 @@
+/* NAVBAR CSS */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.social {
+  flex: 1;
+}
+
+.logo h3 {
+  font-weight: 800;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  /* flex: 1; */
+  gap: 20px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1290px) {
+  .links {
+    font-size: 16px;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .links {
+    font-size: 14px;
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .link {
+    display: none;
+  }
+  .links {
+    justify-content: flex-end;
+  }
+}

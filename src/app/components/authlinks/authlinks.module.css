@@ -1,0 +1,52 @@
+/* AUTH LINK */
+
+.link {
+  font-family: var(--mainFont);
+  cursor: pointer;
+}
+
+.burger {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  padding: 7px;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  display: none;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--textColor);
+}
+
+.responsiveMenu {
+  position: absolute;
+  width: 100%;
+  top: 100px;
+  background-color: var(--softBg);
+  height: calc(100vh - 100px);
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  font-size: 36px;
+  z-index: 999;
+}
+
+@media screen and (max-width: 640px) {
+  .burger {
+    display: flex;
+  }
+  .link {
+    display: none;
+  }
+  .logoutStyle {
+    font-size: 36px;
+    font-family: var(--mainFont);
+  }
+}

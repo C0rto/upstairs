@@ -1,0 +1,14 @@
+.container {
+}
+
+.title {
+  text-align: center;
+  background-color: #a61c3c7d;
+  color: white;
+  padding: 5px 15px;
+}
+
+.content {
+  display: flex;
+  gap: 50px;
+}

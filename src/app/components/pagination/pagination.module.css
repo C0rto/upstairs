@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  width: 100px;
+  border: none;
+  padding: 13px;
+  background-color: var(--logoPink);
+  color: white;
+  cursor: pointer;
+}
+
+.button:disabled {
+  background-color: var(--logoPink);
+  opacity: 0.2;
+  cursor: not-allowed;
+}

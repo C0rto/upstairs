@@ -6,8 +6,8 @@ import choseMode from '@/utils/choseMode'
 
 export const ThemeContext = createContext()
 
+// taking the time
 const hour = choseMode()
-
 
 const getFromLocalStorage = () => {
   // the component starts as server so there is no window and no property of localStorage at beginning, so when the transition to a client side component is completed use the localStorage method on window

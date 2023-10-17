@@ -1,8 +1,8 @@
 'use client'
-
+// WRITE PAGE
 import React from 'react'
 import styles from './write.module.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import {
   AiOutlinePlus,
   AiFillPicture,
@@ -11,10 +11,26 @@ import {
 } from 'react-icons/ai'
 import ReactQuill from 'react-quill'
 import 'react-quill/dist/quill.bubble.css'
+import { useSession } from 'next-auth/react'
+import { useRouter } from 'next/navigation'
 
 const WritePage = () => {
   const [open, setOpen] = useState(false)
   const [value, setValue] = useState('')
+
+  const { status } = useSession()
+  const router = useRouter()
+
+  useEffect(() => {
+    if (status === 'authenticated') {
+      router.push('/')
+    }
+  }, [status])
+
+  if (status === 'loading') {
+    return <div className="styles.loading">Loading...</div>
+  }
+
   return (
     <div className={styles.container}>
       <input type="text" placeholder="Title" className={styles.input} />

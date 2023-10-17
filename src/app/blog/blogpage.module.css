@@ -3,9 +3,10 @@
 
 .title {
   text-align: center;
-  background-color: #a61c3c7d;
+  background-color: var(--logoPink);
   color: white;
   padding: 5px 15px;
+  text-transform: capitalize;
 }
 
 .content {

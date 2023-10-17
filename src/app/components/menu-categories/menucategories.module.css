@@ -10,28 +10,29 @@
   padding: 10px 25px;
   border-radius: 10px;
   font-size: 14px;
+  color: white;
 }
 
 .categoryItem.comedy {
-  background-color: #92bfb17d;
+  background-color: #92bfb1;
 }
 
 .categoryItem.musical {
-  background-color: #f4ac457d;
+  background-color: #f4ac45;
 }
 
 .categoryItem.thriller {
-  background-color: #694a387d;
+  background-color: #694a38;
 }
 
 .categoryItem.horror {
-  background-color: #a61c3c7d;
+  background-color: #a61c3c;
 }
 
 .categoryItem.fantasy {
-  background-color: #9046cf7d;
+  background-color: #9046cf;
 }
 
 .categoryItem.retro {
-  background-color: #fb4d3d7d;
+  background-color: #fb4d3d;
 }

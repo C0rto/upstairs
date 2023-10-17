@@ -1,18 +1,34 @@
 'use client'
 
-import React from 'react'
 import styles from './loginpage.module.css'
 import { FaGoogle, FaGithub, FaFacebook } from 'react-icons/fa6'
 import { useSession, signIn } from 'next-auth/react'
+import { useRouter } from 'next/navigation'
+import { useEffect } from 'react'
 
 const LoginPage = () => {
-  const { data, status } = useSession()
+  const { status } = useSession()
+  const router = useRouter()
 
-  console.log(data)
+  useEffect(() => {
+    if (status === 'authenticated') {
+      router.push('/')
+    }
+  }, [status])
+
+  if (status === 'loading') {
+    return <div className="styles.loading">Loading...</div>
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <div className={styles.socialButton}>
+        <div
+          className={styles.socialButton}
+          onClick={() => {
+            signIn('google')
+          }}
+        >
           Sign in with Google
           <FaGoogle />
         </div>

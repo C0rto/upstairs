@@ -31,6 +31,18 @@ const Featured = () => {
             nemo quasi sunt! Dolorum, debitis enim id facere culpa commodi,
             voluptate, magni aliquid quia laudantium explicabo nobis ducimus
             repudiandae magnam accusamus voluptatem mollitia aliquam cum
+            veritatis asperiores. Id maiores numquam officia.laudantium eaque
+            nemo quasi sunt! Dolorum, debitis enim id facere culpa commodi,
+            voluptate, magni aliquid quia laudantium explicabo nobis ducimus
+            repudiandae magnam accusamus voluptatem mollitia aliquam cum
+            veritatis asperiores. Id maiores numquam officia.laudantium eaque
+            nemo quasi sunt! Dolorum, debitis enim id facere culpa commodi,
+            voluptate, magni aliquid quia laudantium explicabo nobis ducimus
+            repudiandae magnam accusamus voluptatem mollitia aliquam cum
+            veritatis asperiores. Id maiores numquam officia.laudantium eaque
+            nemo quasi sunt! Dolorum, debitis enim id facere culpa commodi,
+            voluptate, magni aliquid quia laudantium explicabo nobis ducimus
+            repudiandae magnam accusamus voluptatem mollitia aliquam cum
             veritatis asperiores. Id maiores numquam officia.
           </p>
           <button className={styles.button}>Read More</button>

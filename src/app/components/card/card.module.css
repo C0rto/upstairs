@@ -2,24 +2,30 @@
   margin-bottom: 50px;
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 10px;
+  border: 3px solid var(--softBg);
+  padding: 15px;
+  border-radius: var(--radius);
 }
 
 .imageContainer {
   flex: 1;
-  height: 350px;
+  gap: 10px;
+  /* height: 350px; */
+  aspect-ratio: 1/1;
   position: relative;
 }
 
 .image {
-  object-fit: cover;
+  border-radius: var(--radius);
+  object-fit: fill;
 }
 
 .textContainer {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  overflow: hidden;
 }
 
 .date {
@@ -45,6 +51,7 @@
   width: max-content;
   padding: 3px 0px;
   white-space: nowrap;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 1280px) {

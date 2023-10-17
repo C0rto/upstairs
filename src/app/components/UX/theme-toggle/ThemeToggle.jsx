@@ -16,7 +16,7 @@ const ThemeToggle = () => {
       onClick={toggle}
       style={
         mode === 'dark'
-          ? { backgroundColor: '#f8f8f8' }
+          ? { backgroundColor: '#f5f5fa' }
           : { backgroundColor: '#0f172a' }
       }
     >

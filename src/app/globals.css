@@ -1,15 +1,13 @@
-/* GLOBAL CSS */
-
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Oswald:wght@400;500;600;700&display=swap');
 
+/* GLOBAL CSS */
 :root {
-  --bg: #f8f8f8;
+  --bg: #f5f5fa;
   --textColor: #352d39;
-  --softBg: #f0f0f0;
+  --softBg: #f2f2f8;
   --softTextColor: #6a5a72;
   --logoPink: #ff51f3;
   --logoViolet: #8759f2;
-  --mistyRose: #ffdbda;
   --mainFont: 'Lora', serif;
   --titleFont: 'Oswald', sans-serif;
   --radius: 0.8rem;

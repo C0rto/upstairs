@@ -6,12 +6,12 @@ const UserAvatar = ({ username, userImg, date }) => {
   return (
     <div className={styles.user}>
       <div className={styles.userImageContainer}>
-        <Image src={'/p1.jpeg'} alt="" fill className={styles.avatar} />
+        <Image src={userImg} alt="" fill className={styles.avatar} />
       </div>
 
       <div className={styles.userTextContainer}>
         <span className={styles.username}>{username}</span>
-        <span className={styles.date}>01.01.2024</span>
+        <span className={styles.date}>{date?.substring(0, 10)}</span>
       </div>
     </div>
   )

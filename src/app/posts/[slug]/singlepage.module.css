@@ -15,12 +15,12 @@
 
 .imageContainer {
   flex: 1;
-  height: 350px;
+  height: 550px;
   position: relative;
 }
 
 .image {
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .content {

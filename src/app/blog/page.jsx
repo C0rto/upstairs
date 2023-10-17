@@ -4,12 +4,15 @@ import styles from './blogpage.module.css'
 import CardList from '../components/card-list/CardList'
 import Menu from '../components/menu/Menu'
 
-const BlogPage = () => {
+const BlogPage = ({ searchParams }) => {
+  const page = parseInt(searchParams.page) || 1
+  const { cat } = searchParams
+
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Horror Movies</h1>
+      <h1 className={styles.title}>{cat} Movies</h1>
       <div className={styles.content}>
-        <CardList />
+        <CardList page={page} cat={cat} />
         <Menu />
       </div>
     </div>

@@ -21,7 +21,6 @@ const SinglePage = async ({ params }) => {
   const { slug } = params
 
   const data = await getData(`http://localhost:3000/api/posts/${slug}`)
-  console.log(data.user)
 
   return (
     <div className={styles.container}>
@@ -29,12 +28,12 @@ const SinglePage = async ({ params }) => {
         <div className={styles.textContainer}>
           <h1 className={styles.title}>{data?.title}</h1>
           <UserAvatar
-            date={data.CreatedAt}
-            username={data.user.name}
-            userImg={data.user.image}
+            date={data?.CreatedAt}
+            username={data?.user.name}
+            userImg={data?.user.image}
           />
         </div>
-        {data.img && (
+        {data?.img && (
           <div className={styles.imageContainer}>
             <Image src={data.img} alt="" fill className={styles.image} />
           </div>
@@ -48,7 +47,7 @@ const SinglePage = async ({ params }) => {
             dangerouslySetInnerHTML={{ __html: data?.desc }}
           />
           <div className={styles.comment}>
-            <Comments />
+            <Comments postSlug={slug} />
           </div>
         </div>
         <Menu />

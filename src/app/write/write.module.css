@@ -35,9 +35,14 @@
 
 .addButton {
   border-color: var(--logoViolet);
+  background-color: #8759f225;
 }
 .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--logoViolet);
+  cursor: pointer;
 }
 .add {
   display: flex;
@@ -53,16 +58,28 @@
 }
 
 .input {
-  padding: 50px;
+  margin-top: 40px;
+  padding: 10px 60px;
   font-size: 64px;
   border: none;
   outline: none;
   background-color: transparent;
   color: #b3b3b1;
 }
+.inputCat {
+  padding: 10px 60px;
+  font-size: 32px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--logoPink);
+}
 
 .input::placeholder {
   color: #b3b3b1;
+}
+.inputCat::placeholder {
+  color: #d674ea2c;
 }
 
 .textArea {

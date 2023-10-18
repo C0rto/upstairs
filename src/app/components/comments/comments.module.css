@@ -35,37 +35,32 @@
 
 .comment {
   margin-bottom: 50px;
+  border: 2px solid var(--softBg);
+  border-radius: var(--buttonRadius);
+  overflow: hidden;
 }
 
 .user {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-bottom: 20px;
-}
-
-.image {
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.userInfo {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  color: var(--softTextColor);
-}
-
-.username {
-  font-weight: 500;
-}
-
-.date {
-  font-size: 14px;
+  background-color: var(--softBg);
+  padding: 0.5rem;
 }
 
 .desc {
-  margin: 15px 0;
-  font-size: 16px;
+  padding: 0.8rem 0.5rem;
   font-weight: 300;
+  font-size: 18px;
+}
+
+.login {
+  padding: 0.7rem;
+  background-color: var(--logoViolet);
+  color: white;
+  width: max-content;
+  border-radius: var(--buttonRadius);
+}
+
+@media screen and (max-width: 640px) {
+  .desc {
+    font-size: 13px;
+  }
 }

@@ -40,9 +40,14 @@
   text-transform: uppercase;
 }
 
+.detail {
+  margin-bottom: 15px;
+}
+
 .desc {
   font-size: 18px;
   font-weight: 300;
+  margin-bottom: 5px;
   color: var(--softTextColor);
 }
 

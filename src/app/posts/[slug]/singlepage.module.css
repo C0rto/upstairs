@@ -1,22 +1,24 @@
 .infoContainer {
-  display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 50px;
 }
 
 .textContainer {
   flex: 1;
+  margin: 20px 0;
 }
 
 .title {
-  font-size: 64px;
-  margin-bottom: 50px;
+  font-size: 86px;
+  margin: 20px 0;
 }
 
 .imageContainer {
   flex: 1;
-  height: 550px;
+  height: 580px;
   position: relative;
+  border-radius: var(--radius);
 }
 
 .image {

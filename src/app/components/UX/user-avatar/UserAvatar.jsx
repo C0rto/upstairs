@@ -11,7 +11,10 @@ const UserAvatar = ({ username, userImg, date }) => {
 
       <div className={styles.userTextContainer}>
         <span className={styles.username}>{username}</span>
-        <span className={styles.date}>{date?.substring(0, 10)}</span>
+        <span className={styles.date}>
+          {date?.substring(8, 10)}
+          {date?.substring(4, 7)}-{date?.substring(0, 4)}
+        </span>
       </div>
     </div>
   )

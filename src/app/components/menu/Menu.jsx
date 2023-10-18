@@ -1,9 +1,8 @@
 import React from 'react'
-import Link from 'next/link'
 import styles from './menu.module.css'
-import Image from 'next/image'
 import MenuPosts from '../menu-posts/MenuPosts'
 import MenuCategories from '../menu-categories/MenuCategories'
+
 const Menu = () => {
   return (
     <div className={styles.container}>

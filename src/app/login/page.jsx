@@ -1,5 +1,6 @@
 'use client'
 
+// LOGIN PAGE
 import styles from './loginpage.module.css'
 import { FaGoogle, FaGithub, FaFacebook } from 'react-icons/fa6'
 import { useSession, signIn } from 'next-auth/react'
